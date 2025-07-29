@@ -48,6 +48,12 @@ for codigo,dato in empleado.items():
     print(f"La productividad es: {dato['productividad']}")
     print(f"El Telefono es: {dato['telefono']}")
     print(f"El Correo es: {dato['correo']}")
+    promedio = (dato['productividad']+dato['puntualidad']+dato['equipo'])/3
+    print(f"Promedio de Evaluaciones: {promedio}")
+    if promedio > 6:
+        print(f"La evaluaciones del Empleado son Satisfactorias. ")
+    else:
+        print("Debe Mejorar en la evaluaciones")
     i += 1
 
 
